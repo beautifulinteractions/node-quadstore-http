@@ -37,7 +37,10 @@ both `quadstore.RdfStore` and `quadstore-sparql`:
   const db = memdown();
   const rdfStore = new quadstore.RdfStore(db);
   const sparqlEngine = new SparqlEngine(rdfStore);
-  const server = new HttpServer(rdfStore, sparqlEngine);
+  const opts = {
+    baseUrl: 'http://127.0.0.1:8080'
+  };
+  const server = new HttpServer(rdfStore, sparqlEngine, opts);
 
   server.listen(8080, '127.0.0.1', (err) => {
     if (err) throw err;
