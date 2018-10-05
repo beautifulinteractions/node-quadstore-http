@@ -1,0 +1,65 @@
+{
+  "name": "quadstore-http",
+  "version": "0.0.5",
+  "description": "A http layer for quadstore",
+  "keywords": [
+    "node",
+    "nodejs",
+    "quadstore",
+    "graph",
+    "rdf",
+    "database",
+    "sparql",
+    "rdfjs"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "precommit": "npm test",
+    "prepush": "npm test",
+    "test": "nyc mocha"
+  },
+  "files": [
+    "index.js",
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beautifulinteractions/node-quadstore-http.git"
+  },
+  "devDependencies": {
+    "husky": "^1.0.1",
+    "ldf-client": "github:LinkedDataFragments/Client.js#b7d4aec12b47d32c5f8fdff4a79991b52315b490",
+    "memdown": "^3.0.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1",
+    "should": "^13.2.3"
+  },
+  "dependencies": {
+    "asynciterator": "^2.0.0",
+    "bluebird": "^3.5.2",
+    "debug": "^3.2.5",
+    "express": "^4.16.3",
+    "lodash.defaults": "^4.2.0",
+    "lodash.find": "^4.6.0",
+    "lodash.flatmap": "^4.5.0",
+    "lodash.isboolean": "^3.0.3",
+    "lodash.isfunction": "^3.0.9",
+    "lodash.isnil": "^4.0.0",
+    "lodash.isnumber": "^3.0.3",
+    "lodash.isobject": "^3.0.2",
+    "lodash.isstring": "^4.0.1",
+    "lodash.mapvalues": "^4.6.0",
+    "n3": "^1.0.0-beta.2",
+    "stoppable": "^1.0.6",
+    "yurl": "^2.0.3"
+  },
+  "author": "Jacopo Scazzosi <me@jacoscaz.com>",
+  "contributors": [],
+  "engineStrict": true,
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/beautifulinteractions/node-quadstore-http",
+  "bugs": "https://github.com/beautifulinteractions/node-quadstore-http/issues"
+}
