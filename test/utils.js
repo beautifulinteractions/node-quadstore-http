@@ -8,7 +8,7 @@ const Promise = require('bluebird');
 
 async function serializeQuads(quads, format) {
   return new Promise((resolve, reject) => {
-    const writer = n3.Writer({ format });
+    const writer = new n3.Writer({ format });
     writer.addQuads(quads);
     writer.end((err, result) => {
       if (err) reject(err);
@@ -21,7 +21,7 @@ module.exports.serializeQuads = serializeQuads;
 
 async function deserializeQuads(data, format) {
   return new Promise((resolve, reject) => {
-    const parser = n3.Parser({ format });
+    const parser = new n3.Parser({ format });
     const quads = [];
     parser.parse(data, (err, quad) => {
       if (err) reject(err);

@@ -1,6 +1,6 @@
 {
   "name": "quadstore-http",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "A http layer for quadstore",
   "keywords": [
     "node",
@@ -27,18 +27,18 @@
     "url": "https://github.com/beautifulinteractions/node-quadstore-http.git"
   },
   "devDependencies": {
-    "husky": "^1.0.1",
+    "husky": "^3.0.4",
     "ldf-client": "github:LinkedDataFragments/Client.js#b7d4aec12b47d32c5f8fdff4a79991b52315b490",
-    "memdown": "^3.0.0",
-    "mocha": "^5.2.0",
-    "nyc": "^13.0.1",
+    "memdown": "^5.0.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
     "should": "^13.2.3"
   },
   "dependencies": {
-    "asynciterator": "^2.0.0",
-    "bluebird": "^3.5.2",
-    "debug": "^3.2.5",
-    "express": "^4.16.3",
+    "asynciterator": "^2.0.1",
+    "bluebird": "^3.5.5",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
     "lodash.defaults": "^4.2.0",
     "lodash.find": "^4.6.0",
     "lodash.flatmap": "^4.5.0",
@@ -49,9 +49,9 @@
     "lodash.isobject": "^3.0.2",
     "lodash.isstring": "^4.0.1",
     "lodash.mapvalues": "^4.6.0",
-    "n3": "^1.0.0-beta.2",
-    "stoppable": "^1.0.6",
-    "yurl": "^2.0.3"
+    "n3": "^1.2.0",
+    "stoppable": "^1.1.0",
+    "yurl": "^3.0.1"
   },
   "author": "Jacopo Scazzosi <me@jacoscaz.com>",
   "contributors": [],
