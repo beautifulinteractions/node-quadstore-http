@@ -21,7 +21,10 @@ module.exports.serializeQuads = serializeQuads;
 
 async function deserializeQuads(data, format) {
   return new Promise((resolve, reject) => {
-    const parser = new n3.Parser({ format });
+    const parser = new n3.Parser({ 
+      format, 
+      blankNodePrefix: '',
+    });
     const quads = [];
     parser.parse(data, (err, quad) => {
       if (err) reject(err);

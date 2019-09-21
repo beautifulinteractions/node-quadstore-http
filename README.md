@@ -1,5 +1,5 @@
 
-# quadstore-sparql
+# quadstore-http
 
 `quadstore-http` exposes 
 [`quadstore`](https://github.com/beautifulinteractions/node-quadstore)'s 
@@ -7,7 +7,7 @@ features via HTTP endpoints.
 
 ## Current version
 
-Current version: **v5.0.2** [[See on NPM](https://www.npmjs.com/package/quadstore-http)].
+Current version: **v6.0.1** [[See on NPM](https://www.npmjs.com/package/quadstore-http)].
 
 `quadstore-http` is maintained alongside `quadstore` and versioned 
 accordingly. Equal major version numbers imply compatibility between
@@ -71,6 +71,14 @@ either in `application/n-quads` or `application/trig` and imports them into
 the store.
 
     POST http://127.0.0.1:8080/import
+
+This endpoint parses RDF payloads using the [`N3`][n3] library. `N3`'s default
+behaviour is to prefix blank node labels with a `b{digit}_` prefix, with the
+`{digit}` part being a positive number that grows with each new import. 
+This is done to prevent naming collisions of unrelated blank nodes and can be
+disabled by setting the `blank-node-prefix` query parameter to an empty string:
+
+    POST http://127.0.0.1:8080/import?blank-node-prefix=
  
 #### `POST /delete`
 
@@ -100,3 +108,5 @@ Client.js (`ldf-client`) in the near future.
 
 Provides a [SPARQL 1.1 Protocol](https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/)
 endpoint be used with suitable clients.
+
+[n3]: https://www.npmjs.com/package/n3

@@ -1,6 +1,6 @@
 {
   "name": "quadstore-http",
-  "version": "0.1.0",
+  "version": "6.0.1",
   "description": "A http layer for quadstore",
   "keywords": [
     "node",
@@ -27,7 +27,7 @@
     "url": "https://github.com/beautifulinteractions/node-quadstore-http.git"
   },
   "devDependencies": {
-    "husky": "^3.0.4",
+    "husky": "^3.0.5",
     "ldf-client": "github:LinkedDataFragments/Client.js#b7d4aec12b47d32c5f8fdff4a79991b52315b490",
     "memdown": "^5.0.0",
     "mocha": "^6.2.0",
