@@ -80,13 +80,13 @@ disabled by setting the `blank-node-prefix` query parameter to an empty string:
 
     POST http://127.0.0.1:8080/import?blank-node-prefix=
  
-#### `POST /delete`
+#### `POST /remove`
 
 Mirrors `RDF/JS`'s `Store.delete()` method. Accepts a payload of quads 
 serialized either in `application/n-quads` or `application/trig` and deletes 
 them from the store.
 
-    POST http://127.0.0.1:8080/delete
+    POST http://127.0.0.1:8080/remove
 
 #### `GET /ldf`
 
